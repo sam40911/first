@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/page_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="35dp" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutSelectedApkInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/imageViewApkIcon"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/apk" />
+
+            <ImageView
+                android:id="@+id/imageViewFolder"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/imageViewApkIcon"
+                android:background="@drawable/folder" />
+
+            <TextView
+                android:id="@+id/textViewApkFileName"
+                style="@style/textViewApkFileNameStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@id/imageViewApkIcon"
+                android:paddingLeft="5dp"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="25dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:text="@string/textViewEnterAppName"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/buttonLightVerify"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/style_btnverify"
+                        android:drawableLeft="@drawable/button_icon_light_52"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/buttonLight"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/buttonHeavyVerify"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/style_heavy_btnverify"
+                        android:drawableLeft="@drawable/button_icon_heavy_52"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/buttonHeavy"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="35dp" >
+
+                    <EditText
+                        android:id="@+id/editTextApkFile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/buttonSearch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="2"
+                        android:background="@drawable/style_btnverify"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:src="@android:drawable/ic_menu_search" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="35dp" >
+
+                    <Button
+                        android:id="@+id/buttonVerify"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/style_heavy_btnverify"
+                        android:drawableLeft="@drawable/button_icon_heavy_52"
+                        android:paddingLeft="75dp"
+                        android:paddingRight="75dp"
+                        android:text="@string/buttonVerification"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/imageViewResult"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip" />
+
+                <TextView
+                    android:id="@+id/textVerifyResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="40dp"
+                    android:text=""
+                    android:textColor="@color/Orange"
+                    android:textSize="23sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                        android:paddingRight="20dp" 
+                        android:paddingTop="15dp">
+
+                    <ImageButton
+                        android:id="@+id/buttonDelete"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="3"
+                        android:background="@drawable/style_btnverify"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/textVerifyResultDetailTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                             android:textColor="@color/Orange"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/textVerifyResultDetail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/Orange"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">源碼檢測</string>
+
+     <string name="app_englishName">App Fingerprint Detection Applictaion</string>
+        <string name="app_cppy">copyright © NTUST IDSL 2015</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="folder">Folder</string>
+    <string name="parentDirectory">Parent Directory</string>
+    <string name="fileSize">File Size</string>
+    <string name="currentDir">Current Dir</string>
+     <string name="selectApkFile">請選擇一個APK檔案</string>
+     <string name="dialogOK">OK</string>
+     <string name="dialogCancel">取消</string>
+     <string name ="dialogRemind">Remind</string>
+     <string name ="dialogWarm">Warning</string>
+     <string name ="dialogNetNotNormal">網路連線狀態異常</string>
+     <string name="dialogNoInstall">This app is not installed.</string>
+     <string name="dialogEnterAppName">請輸入App名稱</string>
+     <string name="textViewEnterAppName">請輸入已安裝App名稱</string>
+     <string name="dialogOpen">開啟</string>
+     <string name="dialogWifiOpen">請問是否開啟Wi-Fi功能?</string>
+     <string name ="dialogChecknetwork">請檢查網路連線狀態</string>
+     <string name ="conServer">APP完整性檢驗中</string>
+     <string name ="verifyResult0">與檢測伺服器連線狀態異常!</string>
+	 <string name ="verifyResult1"> 滿足App資料完整性檢測!</string>
+	  <string name ="verifyResult2"> App版本不為最新版, 請更新您的App版本</string>
+	  <string name ="verifyResult3">檢測伺服器尚無此App資料!</string>
+	  <string name ="verifyResult4"> 此App有被修改過，安裝後恐有安全疑慮!</string>
+	  
+	  <string name ="buttonLight">Signature Verification</string>
+	  <string name ="buttonHeavy">Fingerprint Verification</string>
+	  	  <string name ="buttonVerification">完整性驗證</string>
+	  <string name ="textViewapkFileDefault">apkFileName.apk</string>
+	  <string name ="textViewHeadTitleAFDA">源碼檢測</string> 
+	   <string name ="textViewHeadTitleMyFile">我的檔案</string> 
+	   <string name ="filter">filterFileExtension</string> 
+
+</resources>

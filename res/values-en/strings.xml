@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AFDA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="folder">Folder</string>
+    <string name="parentDirectory">Parent Directory</string>
+    <string name="fileSize">File Size</string>
+    <string name="currentDir">Current Dir</string>
+    
+     <string name="selectApkFile">Please select a apk file.</string>
+     <string name="dialogOK">OK</string>
+     <string name="dialogCancel">Cancel</string>
+     <string name ="dialogRemind">Remind</string>
+     <string name ="dialogWarm">Warning</string>
+     <string name ="dialogNetNotNormal">network connection status abnormal.</string>
+     <string name="dialogNoInstall">This app is not installed.</string>
+       <string name="dialogEnterAppName">Please enter the app name.</string>
+           <string name="textViewEnterAppName">Please enter installed app name</string>
+     <string name="dialogOpen">Open</string>
+     <string name="dialogWifiOpen">Turn on Wi-Fi?</string>
+     <string name ="dialogChecknetwork">Please check the network connection status.</string>
+     <string name ="conServer">APP integrity analyzing...</string>
+     <string name ="verifyResult0">Server connection exception!</string>
+	 <string name ="verifyResult1"> APK file meet the integrity Verification.</string>
+	  <string name ="verifyResult2"> Version mismatch, please update the apk to the latest version.</string>
+	  <string name ="verifyResult3"> Unknown, no matched apk samples in APVS.</string>
+	  <string name ="verifyResult4"> APK file has been repacked.</string>
+	  
+	  <string name ="buttonLight">Signature Verification</string>
+	  <string name ="buttonHeavy">Fingerprint Verification</string>
+	  	  <string name ="buttonVerification">Integrity Verification</string>
+	  <string name ="textViewapkFileDefault">apkFileName.apk</string>
+	  <string name ="textViewHeadTitleAFDA">AFDA</string> 
+	   <string name ="textViewHeadTitleMyFile">My file</string> 
+	   <string name ="filter">filterFileExtension</string> 
+	   
+	    
+	  
+	  
+	 
+          
+         
+      
+      
+      
+    
+   
+
+</resources>

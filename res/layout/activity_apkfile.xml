@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+      <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/page_head" />
+      
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"  >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutSelectedApkInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/imageViewApkIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/apk"
+             />
+        
+          <ImageView
+              android:id="@+id/imageViewFolder"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_alignBottom="@id/imageViewApkIcon"
+              android:background="@drawable/folder" />
+
+        <TextView
+            android:id="@+id/textViewApkFileName"
+            style="@style/textViewApkFileNameStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageViewApkIcon"
+            android:paddingLeft="5dp" 
+              android:layout_gravity="center_horizontal"/>
+
+    </RelativeLayout>
+    
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="25dp" >
+        
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:paddingLeft="5dp"
+             android:text="@string/textViewEnterAppName"
+             android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/buttonLightVerify"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/style_btnverify"
+                android:drawableLeft="@drawable/button_icon_light_52"
+                android:paddingLeft="10dp"
+                 android:paddingRight="10dp"
+                android:text="@string/buttonLight"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" 
+                android:layout_weight="1"
+                 android:gravity="center_vertical" 
+                 android:visibility="gone">
+
+            <Button
+                android:id="@+id/buttonHeavyVerify"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                 android:paddingLeft="15dp"
+                  android:paddingRight="15dp"
+          		android:drawableLeft="@drawable/button_icon_heavy_52"
+                android:background="@drawable/style_heavy_btnverify"
+                android:text="@string/buttonHeavy"
+                android:textColor="@color/white"
+                 android:textStyle="bold"
+                   android:textSize="20sp"
+                  />
+
+        </LinearLayout>
+        
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+            
+            
+                    
+            <EditText
+                android:id="@+id/editTextApkFile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" />
+            
+
+            <ImageButton
+                android:id="@+id/buttonSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/style_btnverify"
+                 android:src="@android:drawable/ic_menu_search"
+                 android:layout_weight="2" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" 
+                android:layout_weight="1"
+                 android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/buttonVerify"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+          		android:drawableLeft="@drawable/button_icon_heavy_52"
+                android:background="@drawable/style_heavy_btnverify"
+                android:text="@string/buttonVerification"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                  />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+         android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="10dp" >
+        
+           <ImageView
+               android:id="@+id/imageViewResult"
+               android:layout_width="80dip"
+               android:layout_height="80dip"
+                />
+
+       
+           
+        <TextView
+            android:id="@+id/textVerifyResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingTop="5dp"
+            android:textColor="@color/Orange"
+            android:textSize="20sp"
+            android:textStyle="bold" 
+            android:gravity="center_horizontal">
+
+        </TextView>
+        
+        
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+              
+                       <ImageButton
+                android:id="@+id/buttonDelete"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/style_btnverify"
+                 android:layout_weight="3" />
+        
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:gravity="center_horizontal"
+             android:orientation="horizontal"
+             android:paddingLeft="3dp"
+             android:paddingRight="3dp"
+              android:paddingTop="10dp" 
+               android:layout_weight="1" >
+            
+              <TextView
+              android:id="@+id/textVerifyResultDetailTitle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=""
+              android:textColor="@color/gray"
+              android:textSize="17sp"
+               android:textStyle="bold" />
+              
+              
+               <TextView
+              android:id="@+id/textVerifyResultDetail"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text=""
+              android:textColor="@color/gray"
+              android:textSize="17sp"
+                android:textStyle="bold" 
+                 />
+              
+              
+              
+
+       
+         </LinearLayout>
+         
+         
+           
+            
+            
+
+         
+          
+           
+              </LinearLayout>
+          </LinearLayout>
+    </LinearLayout>
+    
+     </LinearLayout>
+
+</LinearLayout>
